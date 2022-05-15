@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     var name: String?
     @IBOutlet weak var label: UILabel!

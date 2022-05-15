@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class LogInViewController: UIViewController {
     
     
     @IBOutlet weak var nameTF: UITextField!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let dvc = segue.destination as? SecondViewController else { return }
+        guard let dvc = segue.destination as? WelcomeViewController else { return }
         dvc.name = nameTF.text
         
     }
